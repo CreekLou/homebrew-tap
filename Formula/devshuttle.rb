@@ -16,7 +16,7 @@ class Devshuttle < Formula
   end
 
   def install
-    bin.install Dir["*/devshuttle"].first
+    bin.install buildpath.glob("*/devshuttle").first
   end
 
   test do
